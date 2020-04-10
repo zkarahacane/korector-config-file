@@ -1,0 +1,8 @@
+spring:
+  profiles: "prod"
+server:
+  port: 8885
+teams:
+  service:
+    name: teams
+

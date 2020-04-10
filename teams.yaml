@@ -1,0 +1,15 @@
+spring:
+  profiles: "prod"
+  port: ${PORT:8081}
+  datasource:
+    url: "jdbc:mysql://52.166.178.31:32768/korector"
+    username: "root"
+    password: "root"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
